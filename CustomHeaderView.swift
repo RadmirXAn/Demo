@@ -8,7 +8,7 @@
 import UIKit
 
 class CustomHeaderView: UITableViewHeaderFooterView {
-
+    
     @IBOutlet weak var titleLabel: UILabel!
     
 }

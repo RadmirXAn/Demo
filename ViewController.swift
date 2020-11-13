@@ -9,12 +9,15 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
+    let headerID = String(describing: CustomHeaderView.self)
+    
     @IBOutlet weak var customTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         //customTableView.dataSource = self
         //customTableView.delegate = self
+        tableViewConfig()
     }
     
     // MARK: UITableViewDelegate, UITableViewDataSource
@@ -33,8 +36,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
  
-    let headerID = String(describing: CustomHeaderView.self)
-        
     private func tableViewConfig() {
         let nib = UINib(nibName: headerID, bundle: nil)
         customTableView.register(nib, forHeaderFooterViewReuseIdentifier: headerID)
