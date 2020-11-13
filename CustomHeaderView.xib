@@ -21,6 +21,14 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="agg-zI-ZGf">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="102"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button" image="shift" catalog="system"/>
+                    <connections>
+                        <action selector="tapHeader:" destination="iN0-l3-epB" eventType="touchUpInside" id="4V4-dj-WyH"/>
+                    </connections>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -28,12 +36,14 @@
             <nil key="simulatedBottomBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
+                <outlet property="headerButton" destination="agg-zI-ZGf" id="xti-Sd-Zs7"/>
                 <outlet property="titleLabel" destination="OS5-uV-XX2" id="5PX-Fs-nUv"/>
             </connections>
             <point key="canvasLocation" x="9.5999999999999996" y="-325.63718140929535"/>
         </view>
     </objects>
     <resources>
+        <image name="shift" catalog="system" width="128" height="106"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
